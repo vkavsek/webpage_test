@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <style>
 	.mami_button {
-		background-color: rgb(200, 20, 0);
+		background-color: rgb(204, 0, 0);
 		color: white;
-		width: 105px;
-		height: 40px;
 		border: none;
-		border-radius: 2px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border-radius: 5px;
 		font-size: medium;
 		font-family:Verdana, Geneva, Tahoma, sans-serif;
 		cursor: pointer;
 		margin-left: 8px;
 		margin-right: 8px;
 		transition: opacity 0.25s;
+		vertical-align: top;
 	}
 	.mami_button:hover{
-		opacity: 0.7;	
+		opacity: 0.6;	
 	} 
 	.mami_button:active {
 		background-color: rgb(100, 10, 0);
@@ -24,10 +27,12 @@
 	.join_button {
 		background-color: white;
 		color: rgb(0, 112, 230);
-		width: 75px;
-		height: 40px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
 		border-width: 1px;
-		border-color: rgb(0, 112, 230);
+		border-color: rgb(50, 130, 255);
 		border-radius: 4px;
 		font-size: medium;
 		font-weight: 500;
@@ -37,9 +42,10 @@
 		margin-right: 8px;
 		transition: background-color 0.5s;
 		transition: color 0.5s;
+		vertical-align: top;
 	}
 	.join_button:hover {
-		background-color: rgb(0, 112, 230);
+		background-color: rgb(50, 130, 255);
 		color: white;
 	}
 	.join_button:active {
@@ -48,10 +54,12 @@
 	}
 
 	.jado_button {
-		background-color: rgb(0, 112, 230);
+		background-color: rgb(50, 130, 255);
 		color: white;
-		width: 75px;
-		height: 40px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
 		border: none;
 		border-radius:30px;
 		font-size: medium;
@@ -61,6 +69,7 @@
 		margin-left: 8px;
 		margin-right: 8px;
 		transition: box-shadow 0.25s;
+		vertical-align: top;
 	}
 
 	.jado_button:hover {
@@ -72,18 +81,49 @@
 		color: rgb(0, 112, 230);
 	}
 
-	.generic {
-		font-weight: 900;
-		font-size: x-large;
-		position: sticky;
-		top: 400px;
-		left: 200px;
-		color: blue;
-		transition: text-shadow 0.15s;
+	.stretch_button {
+		background-color: darkgreen;
+		border: none;
+		color: white;
+		font-size: large;
+		border-radius: 7px;
+		padding-top: 5px ;
+		padding-bottom: 5px;
+		padding-left: 10px;
+		padding-right: 10px;
+		vertical-align: top;	
+		cursor: pointer;	
+		transition: padding-bottom 0.25s,
+			padding-right 0.25s;
 	}
-	.generic:hover {
-		color: aqua;
-		text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
+	.stretch_button:hover {
+		padding-bottom: 15px;
+		padding-right: 20px;
+	}
+
+	.click_button {
+		background-color: darkgreen;
+		border: none;
+		color: white;
+		font-size: large;
+		border-radius: 7px;
+		padding-top: 5px ;
+		padding-bottom: 5px;
+		padding-left: 10px;
+		padding-right: 10px;
+		vertical-align: top;	
+		cursor: pointer;	
+		box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+		vertical-align: top;
+	}
+
+	.click_button:hover {
+		opacity: 0.9;
+	}
+
+	.click_button:active {
+		transform: translate(3px, 3px);
+		box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 	}
 </style>
 
@@ -99,11 +139,19 @@
 	Jado si
 </button>
 
+<button class="stretch_button">
+	Stretch
+</button>
+
+<button class="click_button">
+	Click
+</button>
+
 <h1>
 	ALOBRE
 </h1>
 
-<a href="https://www.github.com" target="_blank" class="jado_button">
+<a href="https://www.github.com" target="_blank">
 	GitHub link
 </a>	
 	
