@@ -1,5 +1,8 @@
 p {
-	font-family: Helvetica;
+	font-family: 'Rubik Mono One', sans-serif;
+	width: 300px;
+	font-size: 16px;
+	text-align: center;
 	margin-top: 0;
 	margin-bottom: 0;
 }
@@ -9,10 +12,8 @@ a {
 }
 
 .pr-title {
-	font-size: 20px;
+	font-size: 19px;
 	font-weight: bold;
-	text-align: center;
-	width: 250px;
 	line-height: 24px;
 	transition: letter-spacing 0.15s;
 	margin-bottom: 5px;
@@ -22,28 +23,25 @@ a {
 }
 
 .stats {
-	font-size: 14px;
+	font-size: 10px;
+	text-align: justify;
 	color: rgb(97, 98, 98);
 	margin-bottom: 15px;
 }
 
 .pr-body-a {
-	font-size: 17px;
-	text-align: center;
-	width: 250px;
 	line-height: 20px;
 	margin-bottom: 20px;
 }
 
 .pr-body-b {
+	width: initial;
 	background-color: rgb(227, 64, 64);
 	color: white;
-	text-align: center;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	padding-left: 40px;
 	padding-right: 40px;
-	font-size: 18px;
 	font-weight:600;
 	line-height: 20px;
 	transition: background-color 0.5s,
