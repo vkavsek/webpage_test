@@ -1,38 +1,22 @@
-.searchbar {
-	border-radius: 20px;
-	border-style: none;
-	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-	padding-left: 20px;
-	padding-top: 7px;
-	padding-bottom: 7px;
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: 12px;
-	font-weight: bold;
-	color: rgb(100,100,100);
-	margin-bottom: 10px;
-	display: block;
-	width: 500px;
-} 
-
 p {
 	font-family: 'Josefin Sans', sans-serif;
 	margin-top: 0;
 	margin-bottom: 0;
 }
-
-.video-prev {
-	width: 300px;	
-	display: inline-block;
-	vertical-align: top;
+.video-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 16px;
+	row-gap: 40px;
 }
 	.thumbnail-row {
 		margin-bottom: 10px;	
-		width: 300px;
 	}
 		.thumbnail {
 			border-radius: 10px;
 			width: 100%;
 		}
+
 	.vid-info-grid {
 		display: grid;
 		grid-template-columns: 50px 1fr;
