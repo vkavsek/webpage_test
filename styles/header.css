@@ -68,6 +68,8 @@
 				height: 24px;
 			}
 	.right-section {
-		background-color: pink;	
+		display: flex;
+		align-items: center;
 		width: 300px;
 	}
+		
