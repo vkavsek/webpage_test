@@ -13,7 +13,7 @@
 		<link rel="stylesheet" href="styles/sidebar.css">
 	</head>
 	<body>
-		<div class="header">
+		<header class="header">
 			<div class="left-section">
 				<img src="assets/icons/hamburger-menu.svg" class="hamburger-menu">
 				<img src="assets/icons/youtube-logo.svg" class="youtube-logo">
@@ -22,9 +22,11 @@
 				<input class="searchbar" type="text" placeholder="Search">
 				<button class="search-button">
 					<img src="assets/icons/search.svg" class="search-icon">
+					<div class="tooltip">Search</div>
 				</button>
 				<button class="voice-s-button">
 					<img src="assets/icons/voice-search-icon.svg" class="voice-s-icon">
+					<div class="tooltip">Search with your voice</div>
 				</button>
 			</div>
 			<div class="right-section">
@@ -36,9 +38,9 @@
 				</div>
 				<img src="assets/images/channel-1.jpeg" class="user-profile-icon">
 			</div>
-		</div>
+		</header>
 
-		<div class="sidebar">
+		<nav class="sidebar">
 			<div class="side-div"> 
 				<img src="assets/icons/home.svg" class="home-icon">
 				<p class="side-text">Home</p>
@@ -63,273 +65,275 @@
 				<img src="assets/icons/library.svg" class="lib-icon">
 				<p class="side-text">Library</p>
 			</div>
-		</div>
+		</nav>
 
-		<div class="video-grid">
-			<div class="video-prev">
-				<div class="thumbnail-row">
-					<img class="thumbnail" src="assets/images/thumbnail-1.webp">
-					<div class="video-time">14:20</div>
-				</div>
-				<div class="vid-info-grid">
-					<div class="ch-picture">
-						<img src="assets/images/channel-1.jpeg" class="profile-pic">
+		<main>
+			<section class="video-grid">
+				<div class="video-prev">
+					<div class="thumbnail-row">
+						<img class="thumbnail" src="assets/images/thumbnail-1.webp">
+						<div class="video-time">14:20</div>
 					</div>
-					<div class="video-info">
-						<p class="video-title">
-						Talking Tech and AI with Google CEO Sundar Pichai!
-						</p>
-						<p class="video-author">
-						Marques Brownlee 
-						</p>
-						<p class="video-stats">
-						3.4M views &#183; 6 months ago
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="video-prev">
-				<div class="thumbnail-row">
-					<img class="thumbnail" src="assets/images/thumbnail-2.webp">
-					<div class="video-time">14:20</div>
-				</div>
-				<div class="vid-info-grid">
-					<div class="ch-picture">
-						<img src="assets/images/channel-2.jpeg" class="profile-pic">
-					</div>
-					<div class="video-info">
-						<p class="video-title">
-						Nek neumen video
-						</p>
-						<p class="video-author">
-						En Momak
-						</p>
-						<p class="video-stats">
-						1.2M views &#183; 2 months ago
-						</p>
+					<div class="vid-info-grid">
+						<div class="ch-picture">
+							<img src="assets/images/channel-1.jpeg" class="profile-pic">
+						</div>
+						<div class="video-info">
+							<p class="video-title">
+							Talking Tech and AI with Google CEO Sundar Pichai!
+							</p>
+							<p class="video-author">
+							Marques Brownlee 
+							</p>
+							<p class="video-stats">
+							3.4M views &#183; 6 months ago
+							</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="video-prev">
-				<div class="thumbnail-row">
-					<img class="thumbnail" src="assets/images/thumbnail-1.webp">
-					<div class="video-time">14:20</div>
-				</div>
-				<div class="vid-info-grid">
-					<div class="ch-picture">
-						<img src="assets/images/channel-1.jpeg" class="profile-pic">
+				<div class="video-prev">
+					<div class="thumbnail-row">
+						<img class="thumbnail" src="assets/images/thumbnail-2.webp">
+						<div class="video-time">14:20</div>
 					</div>
-					<div class="video-info">
-						<p class="video-title">
-						Talking Tech and AI with Google CEO Sundar Pichai!
-						</p>
-						<p class="video-author">
-						Marques Brownlee 
-						</p>
-						<p class="video-stats">
-						3.4M views &#183; 6 months ago
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="video-prev">
-				<div class="thumbnail-row">
-					<img class="thumbnail" src="assets/images/thumbnail-2.webp">
-					<div class="video-time">14:20</div>
-				</div>
-				<div class="vid-info-grid">
-					<div class="ch-picture">
-						<img src="assets/images/channel-2.jpeg" class="profile-pic">
-					</div>
-					<div class="video-info">
-						<p class="video-title">
-						Nek neumen video
-						</p>
-						<p class="video-author">
-						En Momak
-						</p>
-						<p class="video-stats">
-						1.2M views &#183; 2 months ago
-						</p>
+					<div class="vid-info-grid">
+						<div class="ch-picture">
+							<img src="assets/images/channel-2.jpeg" class="profile-pic">
+						</div>
+						<div class="video-info">
+							<p class="video-title">
+							Nek neumen video
+							</p>
+							<p class="video-author">
+							En Momak
+							</p>
+							<p class="video-stats">
+							1.2M views &#183; 2 months ago
+							</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="video-prev">
-				<div class="thumbnail-row">
-					<img class="thumbnail" src="assets/images/thumbnail-1.webp">
-					<div class="video-time">14:20</div>
-				</div>
-				<div class="vid-info-grid">
-					<div class="ch-picture">
-						<img src="assets/images/channel-1.jpeg" class="profile-pic">
+				<div class="video-prev">
+					<div class="thumbnail-row">
+						<img class="thumbnail" src="assets/images/thumbnail-1.webp">
+						<div class="video-time">14:20</div>
 					</div>
-					<div class="video-info">
-						<p class="video-title">
-						Talking Tech and AI with Google CEO Sundar Pichai!
-						</p>
-						<p class="video-author">
-						Marques Brownlee 
-						</p>
-						<p class="video-stats">
-						3.4M views &#183; 6 months ago
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="video-prev">
-				<div class="thumbnail-row">
-					<img class="thumbnail" src="assets/images/thumbnail-2.webp">
-					<div class="video-time">14:20</div>
-				</div>
-				<div class="vid-info-grid">
-					<div class="ch-picture">
-						<img src="assets/images/channel-2.jpeg" class="profile-pic">
-					</div>
-					<div class="video-info">
-						<p class="video-title">
-						Nek neumen video
-						</p>
-						<p class="video-author">
-						En Momak
-						</p>
-						<p class="video-stats">
-						1.2M views &#183; 2 months ago
-						</p>
+					<div class="vid-info-grid">
+						<div class="ch-picture">
+							<img src="assets/images/channel-1.jpeg" class="profile-pic">
+						</div>
+						<div class="video-info">
+							<p class="video-title">
+							Talking Tech and AI with Google CEO Sundar Pichai!
+							</p>
+							<p class="video-author">
+							Marques Brownlee 
+							</p>
+							<p class="video-stats">
+							3.4M views &#183; 6 months ago
+							</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="video-prev">
-				<div class="thumbnail-row">
-					<img class="thumbnail" src="assets/images/thumbnail-1.webp">
-					<div class="video-time">4:20</div>
-				</div>
-				<div class="vid-info-grid">
-					<div class="ch-picture">
-						<img src="assets/images/channel-1.jpeg" class="profile-pic">
+				<div class="video-prev">
+					<div class="thumbnail-row">
+						<img class="thumbnail" src="assets/images/thumbnail-2.webp">
+						<div class="video-time">14:20</div>
 					</div>
-					<div class="video-info">
-						<p class="video-title">
-						Talking Tech and AI with Google CEO Sundar Pichai!
-						</p>
-						<p class="video-author">
-						Marques Brownlee 
-						</p>
-						<p class="video-stats">
-						3.4M views &#183; 6 months ago
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="video-prev">
-				<div class="thumbnail-row">
-					<img class="thumbnail" src="assets/images/thumbnail-2.webp">
-					<div class="video-time">14:20</div>
-				</div>
-				<div class="vid-info-grid">
-					<div class="ch-picture">
-						<img src="assets/images/channel-2.jpeg" class="profile-pic">
-					</div>
-					<div class="video-info">
-						<p class="video-title">
-						Nek neumen video
-						</p>
-						<p class="video-author">
-						En Momak
-						</p>
-						<p class="video-stats">
-						1.2M views &#183; 2 months ago
-						</p>
+					<div class="vid-info-grid">
+						<div class="ch-picture">
+							<img src="assets/images/channel-2.jpeg" class="profile-pic">
+						</div>
+						<div class="video-info">
+							<p class="video-title">
+							Nek neumen video
+							</p>
+							<p class="video-author">
+							En Momak
+							</p>
+							<p class="video-stats">
+							1.2M views &#183; 2 months ago
+							</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="video-prev">
-				<div class="thumbnail-row">
-					<img class="thumbnail" src="assets/images/thumbnail-1.webp">
-					<div class="video-time">4:20</div>
-				</div>
-				<div class="vid-info-grid">
-					<div class="ch-picture">
-						<img src="assets/images/channel-1.jpeg" class="profile-pic">
+				<div class="video-prev">
+					<div class="thumbnail-row">
+						<img class="thumbnail" src="assets/images/thumbnail-1.webp">
+						<div class="video-time">14:20</div>
 					</div>
-					<div class="video-info">
-						<p class="video-title">
-						Talking Tech and AI with Google CEO Sundar Pichai!
-						</p>
-						<p class="video-author">
-						Marques Brownlee 
-						</p>
-						<p class="video-stats">
-						3.4M views &#183; 6 months ago
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="video-prev">
-				<div class="thumbnail-row">
-					<img class="thumbnail" src="assets/images/thumbnail-2.webp">
-					<div class="video-time">4:20</div>
-				</div>
-				<div class="vid-info-grid">
-					<div class="ch-picture">
-						<img src="assets/images/channel-2.jpeg" class="profile-pic">
-					</div>
-					<div class="video-info">
-						<p class="video-title">
-						Nek neumen video
-						</p>
-						<p class="video-author">
-						En Momak
-						</p>
-						<p class="video-stats">
-						1.2M views &#183; 2 months ago
-						</p>
+					<div class="vid-info-grid">
+						<div class="ch-picture">
+							<img src="assets/images/channel-1.jpeg" class="profile-pic">
+						</div>
+						<div class="video-info">
+							<p class="video-title">
+							Talking Tech and AI with Google CEO Sundar Pichai!
+							</p>
+							<p class="video-author">
+							Marques Brownlee 
+							</p>
+							<p class="video-stats">
+							3.4M views &#183; 6 months ago
+							</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="video-prev">
-				<div class="thumbnail-row">
-					<img class="thumbnail" src="assets/images/thumbnail-1.webp">
-					<div class="video-time">14:20</div>
-				</div>
-				<div class="vid-info-grid">
-					<div class="ch-picture">
-						<img src="assets/images/channel-1.jpeg" class="profile-pic">
+				<div class="video-prev">
+					<div class="thumbnail-row">
+						<img class="thumbnail" src="assets/images/thumbnail-2.webp">
+						<div class="video-time">14:20</div>
 					</div>
-					<div class="video-info">
-						<p class="video-title">
-						Talking Tech and AI with Google CEO Sundar Pichai!
-						</p>
-						<p class="video-author">
-						Marques Brownlee 
-						</p>
-						<p class="video-stats">
-						3.4M views &#183; 6 months ago
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="video-prev">
-				<div class="thumbnail-row">
-					<img class="thumbnail" src="assets/images/thumbnail-2.webp">
-					<div class="video-time">4:20</div>
-				</div>
-				<div class="vid-info-grid">
-					<div class="ch-picture">
-						<img src="assets/images/channel-2.jpeg" class="profile-pic">
-					</div>
-					<div class="video-info">
-						<p class="video-title">
-						Nek neumen video
-						</p>
-						<p class="video-author">
-						En Momak
-						</p>
-						<p class="video-stats">
-						1.2M views &#183; 2 months ago
-						</p>
+					<div class="vid-info-grid">
+						<div class="ch-picture">
+							<img src="assets/images/channel-2.jpeg" class="profile-pic">
+						</div>
+						<div class="video-info">
+							<p class="video-title">
+							Nek neumen video
+							</p>
+							<p class="video-author">
+							En Momak
+							</p>
+							<p class="video-stats">
+							1.2M views &#183; 2 months ago
+							</p>
+						</div>
 					</div>
 				</div>
-			</div>
-		</div>
+				<div class="video-prev">
+					<div class="thumbnail-row">
+						<img class="thumbnail" src="assets/images/thumbnail-1.webp">
+						<div class="video-time">4:20</div>
+					</div>
+					<div class="vid-info-grid">
+						<div class="ch-picture">
+							<img src="assets/images/channel-1.jpeg" class="profile-pic">
+						</div>
+						<div class="video-info">
+							<p class="video-title">
+							Talking Tech and AI with Google CEO Sundar Pichai!
+							</p>
+							<p class="video-author">
+							Marques Brownlee 
+							</p>
+							<p class="video-stats">
+							3.4M views &#183; 6 months ago
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="video-prev">
+					<div class="thumbnail-row">
+						<img class="thumbnail" src="assets/images/thumbnail-2.webp">
+						<div class="video-time">14:20</div>
+					</div>
+					<div class="vid-info-grid">
+						<div class="ch-picture">
+							<img src="assets/images/channel-2.jpeg" class="profile-pic">
+						</div>
+						<div class="video-info">
+							<p class="video-title">
+							Nek neumen video
+							</p>
+							<p class="video-author">
+							En Momak
+							</p>
+							<p class="video-stats">
+							1.2M views &#183; 2 months ago
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="video-prev">
+					<div class="thumbnail-row">
+						<img class="thumbnail" src="assets/images/thumbnail-1.webp">
+						<div class="video-time">4:20</div>
+					</div>
+					<div class="vid-info-grid">
+						<div class="ch-picture">
+							<img src="assets/images/channel-1.jpeg" class="profile-pic">
+						</div>
+						<div class="video-info">
+							<p class="video-title">
+							Talking Tech and AI with Google CEO Sundar Pichai!
+							</p>
+							<p class="video-author">
+							Marques Brownlee 
+							</p>
+							<p class="video-stats">
+							3.4M views &#183; 6 months ago
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="video-prev">
+					<div class="thumbnail-row">
+						<img class="thumbnail" src="assets/images/thumbnail-2.webp">
+						<div class="video-time">4:20</div>
+					</div>
+					<div class="vid-info-grid">
+						<div class="ch-picture">
+							<img src="assets/images/channel-2.jpeg" class="profile-pic">
+						</div>
+						<div class="video-info">
+							<p class="video-title">
+							Nek neumen video
+							</p>
+							<p class="video-author">
+							En Momak
+							</p>
+							<p class="video-stats">
+							1.2M views &#183; 2 months ago
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="video-prev">
+					<div class="thumbnail-row">
+						<img class="thumbnail" src="assets/images/thumbnail-1.webp">
+						<div class="video-time">14:20</div>
+					</div>
+					<div class="vid-info-grid">
+						<div class="ch-picture">
+							<img src="assets/images/channel-1.jpeg" class="profile-pic">
+						</div>
+						<div class="video-info">
+							<p class="video-title">
+							Talking Tech and AI with Google CEO Sundar Pichai!
+							</p>
+							<p class="video-author">
+							Marques Brownlee 
+							</p>
+							<p class="video-stats">
+							3.4M views &#183; 6 months ago
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="video-prev">
+					<div class="thumbnail-row">
+						<img class="thumbnail" src="assets/images/thumbnail-2.webp">
+						<div class="video-time">4:20</div>
+					</div>
+					<div class="vid-info-grid">
+						<div class="ch-picture">
+							<img src="assets/images/channel-2.jpeg" class="profile-pic">
+						</div>
+						<div class="video-info">
+							<p class="video-title">
+							Nek neumen video
+							</p>
+							<p class="video-author">
+							En Momak
+							</p>
+							<p class="video-stats">
+							1.2M views &#183; 2 months ago
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
 	</body>
 </html>

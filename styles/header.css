@@ -38,10 +38,8 @@
 		align-items: center;
 	}
 		.searchbar {
+			border: 1px solid rgb(145,145,145);
 			border-radius: 25px;
-			border-width: 1px;
-			border-style: solid;
-			border-color: rgb(145,145,145);
 			box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.15);
 			font-size: 15px;
 			padding-left: 20px;
@@ -50,7 +48,6 @@
 			width: 25px;
 		} 
 		.searchbar::placeholder {
-			font-family: 'Josefin Sans', sans-serif;
 			font-size: 12px;
 			font-weight: bold;
 			color: rgb(100,100,100);
@@ -65,9 +62,29 @@
 			border-color: rgb(145,145,145);
 			border-radius: 20px;
 			border-width: 1px;
+			position: relative;
 		}
 			.search-icon {
+				padding-top: 5px;
 				height: 24px;
+			}
+			.search-button .tooltip {
+				font-size: 12px;
+				position: absolute;
+				bottom: -30;
+				background-color: rgb(70,70,70);
+				color: white;
+				padding-top: 4px;
+				padding-bottom: 4px;
+				padding-right: 4px;
+				padding-left: 4px;
+				border-radius: 3px;
+				opacity: 0;
+				transition: opacity 0.25s;
+				pointer-events: none;
+			}
+			.search-button:hover .tooltip {
+				opacity: 1;
 			}
 		.voice-s-button {
 			height: 40px;
@@ -76,10 +93,31 @@
 			background-color: white;
 			border-style: none;
 			border-radius: 15px;
+			position: relative;
 		}
 			.voice-s-icon {
 				height: 24px;
 			}
+			.voice-s-button .tooltip {
+				font-size: 12px;
+				position: absolute;
+				bottom: -60px;
+				background-color: rgb(70,70,70);
+				color: white;
+				padding: 4px;
+				border-radius: 3px;
+				opacity: 0;
+				transition: opacity 0.25s;
+				pointer-events: none;
+			}
+			.voice-s-button:hover .tooltip {
+				opacity: 1;
+			}
+		.search-button .voice-s-button {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 	.right-section {
 		display: flex;
 		align-items: center;
