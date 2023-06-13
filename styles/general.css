@@ -6,7 +6,7 @@ p {
 body {
 	margin: 0;
 	background-color: white;
-	padding-top: 60px;	
-	padding-left: 72px;
+	padding-top: 60px;
+	padding-left:calc(var(--sidebar-width) + 20px);
 	padding-right: 10px;
 } 

@@ -1,8 +1,53 @@
+:root {
+	--side-icon-width: 30px;
+	--sidebar-width: 60px;
+}
+
 .sidebar {
 	position: fixed;
 	left: 0;
 	bottom: 0;
-	top: 61px;
+	top: 55px;
 	background-color: white;
-	width: 72px;
+	width: var(--sidebar-width);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 30px;
+	padding-bottom: 50px;
+	padding-left: 10px;
+	z-index: 1;
 }
+	.side-div {
+		width: var(--sidebar-width);
+		height: var(--sidebar-width);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.side-div:hover {
+		background-color: rgb(220, 220, 220);
+	} 
+		.home-icon {
+			width: var(--side-icon-width);
+		}
+		.explore-icon {
+			width: var(--side-icon-width);
+		}
+		.subscriptions-icon {
+			width: var(--side-icon-width);
+		}
+		.originals-icon {
+			width: var(--side-icon-width);
+		}
+		.yt-music-icon {
+			width: var(--side-icon-width);
+		}
+		.lib-icon {
+			width: var(--side-icon-width);
+		}
+		.side-text {
+			text-align: center;
+		} 
