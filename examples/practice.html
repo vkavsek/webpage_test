@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,200;1,700&display=swap" rel="stylesheet">
+		<title>Flexbox Practice</title>
+		<style>
+			body {
+				margin: 0;
+				background-color: white;
+			}
+			p {
+				font-family: 'Josefin Sans', sans-serif;
+				margin: 0;
+			}
+			.structure-div {
+				display: flex;
+				background-color: aliceblue;
+				flex-direction: column;
+			}
+				.header-div {
+					margin-top: 20px;
+					margin-bottom: 20px;
+				}
+					.header-text {
+						color: rgb(160, 160, 160);
+						margin-left: 4%;
+						font-size: 16px;
+					}
+				.emails-div {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					width: 450px;
+				}
+					.user-pic-div {
+						margin-left: 4%;
+						height: 50px;
+					}
+						.user-pic {
+							height: 50px;
+							border-radius: 50px;
+						}	
+					.email-contents-div {
+						flex: 1;
+						display: flex;
+						flex-direction: column;
+						justify-content: space-between;
+						margin-left: 16px;
+						margin-right: 6%;
+					}		
+						.em-row-1 {
+							display: flex;
+							justify-content: space-between;
+							align-items: center;
+						}
+							.sender-name {
+								font-size: 20px;
+								font-weight: 900;
+								margin-top: 10px;
+							}
+							.time-rec {
+								font-size: 14px;
+								font-weight: 300;
+							}
+
+							.email-title {
+								font-size: 16px;
+								font-weight: 700;
+								margin-top: 5px;
+								margin-bottom: 5px;
+							}
+							.email-body {
+								color: rgb(160, 160, 160);
+								margin-bottom: 10px;
+							}
+		</style>
+	</head>
+	<body>
+		<div class="structure-div">
+			<div class="header-div">
+				<p class="header-text">ALL INBOXES</p>
+			</div>
+			<div class="emails-div">
+				<div class="user-pic-div">
+					<img src="../assets/images/channel-1.jpeg" class="user-pic">
+				</div>
+				<div class="email-contents-div">
+					<div class="em-row-1">
+						<div class="sender-name-div">
+							<p class="sender-name">
+								Chewy Promotions
+							</p>
+						</div>
+						<div class="time-rec-div">
+							<p class="time-rec">
+								4:58 PM
+							</p>
+						</div>
+					</div>
+					<div class="em-row-2">
+						<p class="email-title">
+							Biggest sales of the year!
+						</p>
+					</div>
+					<div class="em-row-3">
+						<p class="email-body">
+							Hey there! We're writing to tell you about our...
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="emails-div">
+				<div class="user-pic-div">
+					<img src="../assets/images/channel-2.jpeg" class="user-pic">
+				</div>
+				<div class="email-contents-div">
+					<div class="em-row-1">
+						<div class="sender-name-div">
+							<p class="sender-name">
+								ludi	
+							</p>
+						</div>
+						<div class="time-rec-div">
+							<p class="time-rec">
+								3:11 PM
+							</p>
+						</div>
+					</div>
+					<div class="em-row-2">
+						<p class="email-title">
+						</p>
+					</div>
+					<div class="em-row-3">
+						<p class="email-body">
+							MODELLLLLL!!!
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="emails-div">
+				<div class="user-pic-div">
+					<img src="../assets/images/channel-2.jpeg" class="user-pic">
+				</div>
+				<div class="email-contents-div">
+					<div class="em-row-1">
+						<div class="sender-name-div">
+							<p class="sender-name">
+								ludi
+							</p>
+						</div>
+						<div class="time-rec-div">
+							<p class="time-rec">
+								2:20 PM
+							</p>
+						</div>
+					</div>
+					<div class="em-row-2">
+						<p class="email-title">
+							Jadno brko
+						</p>
+					</div>
+					<div class="em-row-3">
+						<p class="email-body">
+							Halo majmune!
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="emails-div">
+				<div class="user-pic-div">
+					<img src="../assets/images/channel-1.jpeg" class="user-pic">
+				</div>
+				<div class="email-contents-div">
+					<div class="em-row-1">
+						<div class="sender-name-div">
+							<p class="sender-name">
+								Chewy Promotions
+							</p>
+						</div>
+						<div class="time-rec-div">
+							<p class="time-rec">
+								1:28 PM
+							</p>
+						</div>
+					</div>
+					<div class="em-row-2">
+						<p class="email-title">
+							Biggest sales of the year!
+						</p>
+					</div>
+					<div class="em-row-3">
+						<p class="email-body">
+							Hey there! We're writing to tell you about our...
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
