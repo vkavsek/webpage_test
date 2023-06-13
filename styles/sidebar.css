@@ -1,6 +1,6 @@
 :root {
 	--side-icon-width: 30px;
-	--sidebar-width: 60px;
+	--sidebar-width: 80px;
 }
 
 .sidebar {
@@ -12,7 +12,7 @@
 	width: var(--sidebar-width);
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	padding-top: 30px;
 	padding-bottom: 50px;
@@ -21,33 +21,21 @@
 }
 	.side-div {
 		width: var(--sidebar-width);
-		height: var(--sidebar-width);
+		height: 76px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		margin-bottom: 1px;
+		cursor: pointer;
 	}
 	.side-div:hover {
 		background-color: rgb(220, 220, 220);
 	} 
-		.home-icon {
-			width: var(--side-icon-width);
-		}
-		.explore-icon {
-			width: var(--side-icon-width);
-		}
-		.subscriptions-icon {
-			width: var(--side-icon-width);
-		}
-		.originals-icon {
-			width: var(--side-icon-width);
-		}
-		.yt-music-icon {
-			width: var(--side-icon-width);
-		}
-		.lib-icon {
+		.side-div img {
 			width: var(--side-icon-width);
 		}
 		.side-text {
 			text-align: center;
+			font-size: 11px;
 		} 
